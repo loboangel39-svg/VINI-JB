@@ -5,7 +5,7 @@ struct PatchesView: View {
     @State private var isLoading = false
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Group {
                 if patchManager.isLoading {
                     ProgressView("Loading patches...")
@@ -36,6 +36,7 @@ struct PatchesView: View {
                 Text(patchManager.error ?? "")
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

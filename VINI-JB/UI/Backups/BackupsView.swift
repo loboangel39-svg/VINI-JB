@@ -9,7 +9,7 @@ struct BackupsView: View {
     private let restoreManager = PatchRestoreManager.shared
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Group {
                 if isLoading {
                     ProgressView("Loading backups...")
@@ -40,6 +40,7 @@ struct BackupsView: View {
                 Text(error ?? "")
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     private func loadBackups() async {
@@ -55,7 +56,6 @@ struct BackupsView: View {
     private func restoreBackup(_ backup: BackupInfo) {
         do {
             _ = try restoreManager.restore(patchID: backup.metadata.patchID)
-            // Success feedback
         } catch {
             self.error = error.localizedDescription
         }

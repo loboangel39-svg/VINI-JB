@@ -5,7 +5,7 @@ struct LoginView: View {
     @State private var licenseKey = ""
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack(spacing: 24) {
                 Spacer()
                 
@@ -59,8 +59,8 @@ struct LoginView: View {
                 
                 Spacer()
             }
-            .navigationTitle("Login")
             .navigationBarHidden(true)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }

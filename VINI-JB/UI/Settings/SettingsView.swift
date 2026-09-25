@@ -5,11 +5,11 @@ struct SettingsView: View {
     @EnvironmentObject var appState: AppState
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             List {
-                Section("Account") {
+                Section(header: Text("Account")) {
                     if let username = KeychainManager.shared.loadUsername() {
-                        LabeledContent("User", value: username)
+                        InfoRow(title: "User", value: username)
                     }
                     
                     Button("Logout", role: .destructive) {
@@ -18,18 +18,20 @@ struct SettingsView: View {
                     .foregroundColor(.red)
                 }
                 
-                Section("About") {
-                    LabeledContent("Version", value: "1.0.0")
-                    LabeledContent("Build", value: "1")
+                Section(header: Text("About")) {
+                    InfoRow(title: "Version", value: "1.0.0")
+                    InfoRow(title: "Build", value: "1")
                 }
                 
-                Section("System") {
-                    LabeledContent("iOS", value: appState.deviceInfo?.iosVersion ?? "Unknown")
-                    LabeledContent("Device", value: appState.deviceInfo?.deviceModel ?? "Unknown")
-                    LabeledContent("Jailbreak", value: appState.isJailbreakAvailable ? "Available" : "Not Available")
+                Section(header: Text("System")) {
+                    InfoRow(title: "iOS", value: appState.deviceInfo?.iosVersion ?? "Unknown")
+                    InfoRow(title: "Device", value: appState.deviceInfo?.deviceModel ?? "Unknown")
+                    InfoRow(title: "Jailbreak", value: appState.isJailbreakAvailable ? "Available" : "Not Available")
                 }
             }
+            .listStyle(InsetGroupedListStyle())
             .navigationTitle("Settings")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }

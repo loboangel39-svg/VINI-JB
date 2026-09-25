@@ -16,7 +16,7 @@ struct AppsView: View {
     }
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Group {
                 if isLoading {
                     ProgressView("Loading apps...")
@@ -54,6 +54,7 @@ struct AppsView: View {
                 Text(error ?? "")
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     private func loadContainers() async {
@@ -78,7 +79,7 @@ struct ContainerDetailView: View {
     
     var body: some View {
         List {
-            Section("Directories") {
+            Section(header: Text("Directories")) {
                 ForEach(containerManager.getContainerDirectories(container)) { item in
                     NavigationLink(destination: FileBrowserView(url: item.url, title: item.name)) {
                         Label(item.name, systemImage: "folder")
@@ -86,7 +87,7 @@ struct ContainerDetailView: View {
                 }
             }
             
-            Section("Contents") {
+            Section(header: Text("Contents")) {
                 if isLoading {
                     ProgressView()
                 } else {

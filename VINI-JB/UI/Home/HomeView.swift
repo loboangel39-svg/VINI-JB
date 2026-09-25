@@ -5,28 +5,28 @@ struct HomeView: View {
     @EnvironmentObject var loginManager: LoginManager
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             List {
-                Section("Device Status") {
+                Section(header: Text("Device Status")) {
                     if let deviceInfo = appState.deviceInfo {
-                        LabeledContent("iOS Version", value: deviceInfo.iosVersion)
-                        LabeledContent("Device", value: deviceInfo.deviceModel)
-                        LabeledContent("Architecture", value: deviceInfo.architecture)
+                        InfoRow(title: "iOS Version", value: deviceInfo.iosVersion)
+                        InfoRow(title: "Device", value: deviceInfo.deviceModel)
+                        InfoRow(title: "Architecture", value: deviceInfo.architecture)
                         
                         if let jbType = deviceInfo.jailbreakType {
-                            LabeledContent("Jailbreak", value: jbType)
+                            InfoRow(title: "Jailbreak", value: jbType)
                         } else {
-                            LabeledContent("Jailbreak", value: "Not Detected")
+                            InfoRow(title: "Jailbreak", value: "Not Detected")
                                 .foregroundColor(.red)
                         }
                     }
                 }
                 
-                Section("System") {
-                    LabeledContent("Access Level", value: appState.filesystemAccessLevel.rawValue)
+                Section(header: Text("System")) {
+                    InfoRow(title: "Access Level", value: appState.filesystemAccessLevel.rawValue)
                     
-                    NavigationLink("Diagnostics") {
-                        DiagnosticsView()
+                    NavigationLink(destination: DiagnosticsView()) {
+                        Text("Diagnostics")
                     }
                 }
                 
@@ -37,7 +37,23 @@ struct HomeView: View {
                     .foregroundColor(.red)
                 }
             }
+            .listStyle(InsetGroupedListStyle())
             .navigationTitle("VINI-JB")
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+struct InfoRow: View {
+    let title: String
+    let value: String
+    
+    var body: some View {
+        HStack {
+            Text(title)
+            Spacer()
+            Text(value)
+                .foregroundColor(.secondary)
         }
     }
 }
