@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CC6062862144AB7900B8307 /* VINIJBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03542D335AFC499487475959 /* VINIJBApp.swift */; };
+		B6C1EE0731A7494CA1AAE630 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656AE6DF280460AB8676249 /* KeychainManager.swift */; };
+		B741676CD5E140F2B315979F /* ContainerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57990D4EDD424F239ABA1AD8 /* ContainerManager.swift */; };
+		794B7B635D0D470A95B32952 /* DirectoryBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37441D40F8B540B893DC03B4 /* DirectoryBrowser.swift */; };
+		7FD14888F45C4D23B321512C /* FileSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9496CDEC269941438F35DD1E /* FileSystemManager.swift */; };
+		9305621B7D6644ACBE57ED1E /* JailbreakAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FAC3526C34C52AC768894 /* JailbreakAccess.swift */; };
+		7512EF27C2F94CB5B8F7E33C /* PathResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C2368B76A41E1B61F5496 /* PathResolver.swift */; };
+		70679AB5E8C84D27B4789B42 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644EBE0824CA46529C51DC62 /* Models.swift */; };
+		035E70C030C943F48C210EBE /* PatchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58E358AE74473A8C887B2E /* PatchModels.swift */; };
+		B189D5E4AAA647709C1AF136 /* PatchBackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7CFA5E04D94013A9145D2A /* PatchBackupManager.swift */; };
+		30B8A15E2D5348D6946E0FB8 /* PatchInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB742607E341C496C56E02 /* PatchInstaller.swift */; };
+		F4DD2FB179FC4873A341C3B5 /* PatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F2E8AF8E3F4F34A0E5D30C /* PatchManager.swift */; };
+		172F15B98D3847A7918C0FC8 /* PatchRestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BE18431244DA0B1A1A8AA /* PatchRestoreManager.swift */; };
+		2C3D5A7340504519B54F1A54 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4ECB3A1AD4A429329B564 /* APIClient.swift */; };
+		6A247AB447584AE59B3593B3 /* RemotePatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A9A40B0FB43229F5A0CFE /* RemotePatchService.swift */; };
+		E4CC644F2950409AAE97A1F1 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E95D865DB946C780F8F480 /* AppsView.swift */; };
+		FCCB24F156DC4F08B453C62A /* BackupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A92F717E54873ABD7DBC5 /* BackupsView.swift */; };
+		D981C12E0F9D4B5F93745A4A /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CA513ABB340018BEF4046 /* EmptyStateView.swift */; };
+		2FBF8F1448B741CDA7FEC68A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8C6CA5273453B9969BAB5 /* ContentView.swift */; };
+		F48A6C93B1334750B3B315BA /* DiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9B876A46864D4F9A75B2B2 /* DiagnosticsView.swift */; };
+		237F58E2916D44C6AB84FEF6 /* FileBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0AD43FE134E6485849C7B /* FileBrowserView.swift */; };
+		015C4CD125274FA88DE148B1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9AC2875C04AF8B6D897AB /* HomeView.swift */; };
+		37DE4C1EDB55446AA8CD029D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4BAC933F5C492F835B6F26 /* LoginView.swift */; };
+		20020872332D4AAEA37F6FF9 /* PatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FB2763D3D04CB68901DC8A /* PatchesView.swift */; };
+		03399BA119CB45F88E3D9ED2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41038D6707124DB280882ED3 /* SettingsView.swift */; };
+		9D94D6F9614C4F1C8DD6C8A1 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D55E58B4942A6939F9786 /* LoginManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		607919EEE411482D9D78AFE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D40C6208ACB49B48A57C6F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DA4FC9A00344A6D8F491B78;
+			remoteInfo = "VINI-JB";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDB8E12AC0E54038BC5BFFB0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "/usr/share/man/man1/";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = CopyFiles;
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03542D335AFC499487475959 /* VINIJBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VINIJBApp.swift; sourceTree = "<group>"; };
+		2656AE6DF280460AB8676249 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		57990D4EDD424F239ABA1AD8 /* ContainerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerManager.swift; sourceTree = "<group>"; };
+		37441D40F8B540B893DC03B4 /* DirectoryBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryBrowser.swift; sourceTree = "<group>"; };
+		9496CDEC269941438F35DD1E /* FileSystemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemManager.swift; sourceTree = "<group>"; };
+		AC0FAC3526C34C52AC768894 /* JailbreakAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakAccess.swift; sourceTree = "<group>"; };
+		660C2368B76A41E1B61F5496 /* PathResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathResolver.swift; sourceTree = "<group>"; };
+		644EBE0824CA46529C51DC62 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BB58E358AE74473A8C887B2E /* PatchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchModels.swift; sourceTree = "<group>"; };
+		3B7CFA5E04D94013A9145D2A /* PatchBackupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchBackupManager.swift; sourceTree = "<group>"; };
+		C9BB742607E341C496C56E02 /* PatchInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchInstaller.swift; sourceTree = "<group>"; };
+		09F2E8AF8E3F4F34A0E5D30C /* PatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchManager.swift; sourceTree = "<group>"; };
+		B33BE18431244DA0B1A1A8AA /* PatchRestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchRestoreManager.swift; sourceTree = "<group>"; };
+		22A4ECB3A1AD4A429329B564 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		928A9A40B0FB43229F5A0CFE /* RemotePatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePatchService.swift; sourceTree = "<group>"; };
+		67E95D865DB946C780F8F480 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
+		810A92F717E54873ABD7DBC5 /* BackupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupsView.swift; sourceTree = "<group>"; };
+		CD9CA513ABB340018BEF4046 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		D2C8C6CA5273453B9969BAB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC9B876A46864D4F9A75B2B2 /* DiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsView.swift; sourceTree = "<group>"; };
+		AAD0AD43FE134E6485849C7B /* FileBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserView.swift; sourceTree = "<group>"; };
+		C1A9AC2875C04AF8B6D897AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DA4BAC933F5C492F835B6F26 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		95FB2763D3D04CB68901DC8A /* PatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchesView.swift; sourceTree = "<group>"; };
+		41038D6707124DB280882ED3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9C7D55E58B4942A6939F9786 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		ECAD4B2D11834832A196D2C1 /* VINI-JB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VINI-JB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BF73F185B4414CB11BCD3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9526C65D101D44B4B388682F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD03916BA8964479AB35AC22 = {
+			isa = PBXGroup;
+			children = (
+				BB57974C2EC247AB80F7E974 /* VINI-JB */,
+				C42ABA13D58441D38C3D0814 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C42ABA13D58441D38C3D0814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECAD4B2D11834832A196D2C1 /* VINI-JB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB57974C2EC247AB80F7E974 /* VINI-JB */ = {
+			isa = PBXGroup;
+			children = (
+				4F95281367AD4FBFB69CA676 /* App */,
+				0561651EC6304467BA01D21B /* Authentication */,
+				866D06F0DFB9422DBCD81DFF /* FileSystem */,
+				EFD21B81927F47B88D097848 /* Models */,
+				44290C6C043A47A6B6DEC55F /* Patches */,
+				3440F09217C14DFD8BA16073 /* Remote */,
+				084CBB1CFFCE442D9EFA3962 /* UI */,
+				093FBAD614A74C0AB0E4E144 /* helpers */,
+				B2BF73F185B4414CB11BCD3C /* Info.plist */,
+			);
+			path = "VINI-JB";
+			sourceTree = "<group>";
+		};
+		4F95281367AD4FBFB69CA676 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				03542D335AFC499487475959 /* VINIJBApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0561651EC6304467BA01D21B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2656AE6DF280460AB8676249 /* KeychainManager.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		866D06F0DFB9422DBCD81DFF /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				57990D4EDD424F239ABA1AD8 /* ContainerManager.swift */,
+				37441D40F8B540B893DC03B4 /* DirectoryBrowser.swift */,
+				9496CDEC269941438F35DD1E /* FileSystemManager.swift */,
+				AC0FAC3526C34C52AC768894 /* JailbreakAccess.swift */,
+				660C2368B76A41E1B61F5496 /* PathResolver.swift */,
+			);
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		EFD21B81927F47B88D097848 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				644EBE0824CA46529C51DC62 /* Models.swift */,
+				BB58E358AE74473A8C887B2E /* PatchModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44290C6C043A47A6B6DEC55F /* Patches */ = {
+			isa = PBXGroup;
+			children = (
+				3B7CFA5E04D94013A9145D2A /* PatchBackupManager.swift */,
+				C9BB742607E341C496C56E02 /* PatchInstaller.swift */,
+				09F2E8AF8E3F4F34A0E5D30C /* PatchManager.swift */,
+				B33BE18431244DA0B1A1A8AA /* PatchRestoreManager.swift */,
+			);
+			path = Patches;
+			sourceTree = "<group>";
+		};
+		3440F09217C14DFD8BA16073 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				22A4ECB3A1AD4A429329B564 /* APIClient.swift */,
+				928A9A40B0FB43229F5A0CFE /* RemotePatchService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		084CBB1CFFCE442D9EFA3962 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D2C8C6CA5273453B9969BAB5 /* ContentView.swift */,
+				DA4BAC933F5C492F835B6F26 /* LoginView.swift */,
+				4D90DCB105A04EFBAE41E4E4 /* Apps */,
+				E4555F78BB934885BD4D3943 /* Backups */,
+				CED32F1DEBBD4452AF7FEA85 /* Components */,
+				7DDBE04A359D45BAABD79A33 /* Diagnostics */,
+				F6CAC7017A544CA4B6B5896D /* FileBrowser */,
+				B97BD5BEC8A14C67AAEB27F9 /* Home */,
+				AC49104E25954CFC849CEF0D /* Patches */,
+				CA693E7DE38344029C45ACE6 /* Settings */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		093FBAD614A74C0AB0E4E144 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C7D55E58B4942A6939F9786 /* LoginManager.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		4D90DCB105A04EFBAE41E4E4 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				67E95D865DB946C780F8F480 /* AppsView.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		E4555F78BB934885BD4D3943 /* Backups */ = {
+			isa = PBXGroup;
+			children = (
+				810A92F717E54873ABD7DBC5 /* BackupsView.swift */,
+			);
+			path = Backups;
+			sourceTree = "<group>";
+		};
+		CED32F1DEBBD4452AF7FEA85 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CD9CA513ABB340018BEF4046 /* EmptyStateView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7DDBE04A359D45BAABD79A33 /* Diagnostics */ = {
+			isa = PBXGroup;
+			children = (
+				CC9B876A46864D4F9A75B2B2 /* DiagnosticsView.swift */,
+			);
+			path = Diagnostics;
+			sourceTree = "<group>";
+		};
+		F6CAC7017A544CA4B6B5896D /* FileBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				AAD0AD43FE134E6485849C7B /* FileBrowserView.swift */,
+			);
+			path = FileBrowser;
+			sourceTree = "<group>";
+		};
+		B97BD5BEC8A14C67AAEB27F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1A9AC2875C04AF8B6D897AB /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC49104E25954CFC849CEF0D /* Patches */ = {
+			isa = PBXGroup;
+			children = (
+				95FB2763D3D04CB68901DC8A /* PatchesView.swift */,
+			);
+			path = Patches;
+			sourceTree = "<group>";
+		};
+		CA693E7DE38344029C45ACE6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				41038D6707124DB280882ED3 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DA4FC9A00344A6D8F491B78 /* VINI-JB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E98E98C69224C0AB873D5DE /* Build configuration list for PBXNativeTarget "VINI-JB" */;
+			buildPhases = (
+				98A63528FF0A4A0596FF6952 /* Sources */,
+				9526C65D101D44B4B388682F /* Frameworks */,
+				4EF299C23DB84E65BE911F33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VINI-JB";
+			productName = "VINI-JB";
+			productReference = ECAD4B2D11834832A196D2C1 /* VINI-JB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D40C6208ACB49B48A57C6F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					9DA4FC9A00344A6D8F491B78 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B026379FB9174F0CA5786D6F /* Build configuration list for PBXProject "VINI-JB" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD03916BA8964479AB35AC22;
+			productRefGroup = C42ABA13D58441D38C3D0814 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DA4FC9A00344A6D8F491B78 /* VINI-JB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EF299C23DB84E65BE911F33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98A63528FF0A4A0596FF6952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC6062862144AB7900B8307 /* VINIJBApp.swift in Sources */,
+				B6C1EE0731A7494CA1AAE630 /* KeychainManager.swift in Sources */,
+				B741676CD5E140F2B315979F /* ContainerManager.swift in Sources */,
+				794B7B635D0D470A95B32952 /* DirectoryBrowser.swift in Sources */,
+				7FD14888F45C4D23B321512C /* FileSystemManager.swift in Sources */,
+				9305621B7D6644ACBE57ED1E /* JailbreakAccess.swift in Sources */,
+				7512EF27C2F94CB5B8F7E33C /* PathResolver.swift in Sources */,
+				70679AB5E8C84D27B4789B42 /* Models.swift in Sources */,
+				035E70C030C943F48C210EBE /* PatchModels.swift in Sources */,
+				B189D5E4AAA647709C1AF136 /* PatchBackupManager.swift in Sources */,
+				30B8A15E2D5348D6946E0FB8 /* PatchInstaller.swift in Sources */,
+				F4DD2FB179FC4873A341C3B5 /* PatchManager.swift in Sources */,
+				172F15B98D3847A7918C0FC8 /* PatchRestoreManager.swift in Sources */,
+				2C3D5A7340504519B54F1A54 /* APIClient.swift in Sources */,
+				6A247AB447584AE59B3593B3 /* RemotePatchService.swift in Sources */,
+				E4CC644F2950409AAE97A1F1 /* AppsView.swift in Sources */,
+				FCCB24F156DC4F08B453C62A /* BackupsView.swift in Sources */,
+				D981C12E0F9D4B5F93745A4A /* EmptyStateView.swift in Sources */,
+				2FBF8F1448B741CDA7FEC68A /* ContentView.swift in Sources */,
+				F48A6C93B1334750B3B315BA /* DiagnosticsView.swift in Sources */,
+				237F58E2916D44C6AB84FEF6 /* FileBrowserView.swift in Sources */,
+				015C4CD125274FA88DE148B1 /* HomeView.swift in Sources */,
+				37DE4C1EDB55446AA8CD029D /* LoginView.swift in Sources */,
+				20020872332D4AAEA37F6FF9 /* PatchesView.swift in Sources */,
+				03399BA119CB45F88E3D9ED2 /* SettingsView.swift in Sources */,
+				9D94D6F9614C4F1C8DD6C8A1 /* LoginManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		90A9E769D2214E4E97154EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VINI-JB/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vini.jb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		C6217B78B9614EF69AEBA8ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VINI-JB/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vini.jb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Release;
+		};
+		085845E5501F4EAA909BF11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE847235D72246FABC05F53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E98E98C69224C0AB873D5DE /* Build configuration list for PBXNativeTarget "VINI-JB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90A9E769D2214E4E97154EFA /* Debug */,
+				C6217B78B9614EF69AEBA8ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B026379FB9174F0CA5786D6F /* Build configuration list for PBXProject "VINI-JB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085845E5501F4EAA909BF11A /* Debug */,
+				BE847235D72246FABC05F53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D40C6208ACB49B48A57C6F8 /* Project object */;
+}
