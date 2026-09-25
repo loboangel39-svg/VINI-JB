@@ -88,7 +88,8 @@ struct BackupMetadata: Codable {
     let fileName: String
 }
 
-struct BackupInfo {
+struct BackupInfo: Identifiable {
+    var id: String { metadata.patchID }
     let metadata: BackupMetadata
     let files: [FileItem]
 }
