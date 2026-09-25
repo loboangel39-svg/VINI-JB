@@ -45,16 +45,14 @@ class DefaultFileSystemManager: FileSystemManager {
         let contents = try fileManager.contentsOfDirectory(at: path, includingPropertiesForKeys: [
             .isDirectoryKey,
             .fileSizeKey,
-            .contentModificationDateKey,
-            .posixPermissionsKey
+            .contentModificationDateKey
         ], options: [.skipsHiddenFiles])
         
         return contents.map { url in
             let values = try? url.resourceValues(forKeys: [
                 .isDirectoryKey,
                 .fileSizeKey,
-                .contentModificationDateKey,
-                .posixPermissionsKey
+                .contentModificationDateKey
             ])
             
             return FileItem(
@@ -62,7 +60,7 @@ class DefaultFileSystemManager: FileSystemManager {
                 isDirectory: values?.isDirectory ?? false,
                 size: values?.fileSize.map { UInt64($0) },
                 modificationDate: values?.contentModificationDate,
-                permissions: values?.posixPermissions.map { String($0, radix: 8) }
+                permissions: nil
             )
         }.sorted { $0.name < $1.name }
     }
